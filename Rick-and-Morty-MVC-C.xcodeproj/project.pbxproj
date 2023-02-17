@@ -9,22 +9,41 @@
 /* Begin PBXBuildFile section */
 		2070D152299EC87800BF207D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2070D151299EC87800BF207D /* AppDelegate.swift */; };
 		2070D154299EC87800BF207D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2070D153299EC87800BF207D /* SceneDelegate.swift */; };
-		2070D156299EC87800BF207D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2070D155299EC87800BF207D /* ViewController.swift */; };
+		2070D156299EC87800BF207D /* CharactersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2070D155299EC87800BF207D /* CharactersListViewController.swift */; };
 		2070D159299EC87800BF207D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2070D157299EC87800BF207D /* Main.storyboard */; };
 		2070D15B299EC87900BF207D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2070D15A299EC87900BF207D /* Assets.xcassets */; };
 		2070D15E299EC87900BF207D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2070D15C299EC87900BF207D /* LaunchScreen.storyboard */; };
+		2070D16A299ECA9C00BF207D /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2070D169299ECA9C00BF207D /* APIClient.swift */; };
+		2070D16C299ECBB100BF207D /* CharacterModelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2070D16B299ECBB100BF207D /* CharacterModelResponse.swift */; };
+		2070D16E299ECBE000BF207D /* CharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2070D16D299ECBE000BF207D /* CharacterModel.swift */; };
+		2070D170299EE88A00BF207D /* CharacterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2070D16F299EE88A00BF207D /* CharacterListView.swift */; };
+		2070D172299EEA0100BF207D /* CharacterListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2070D171299EEA0100BF207D /* CharacterListCellView.swift */; };
+		2070D174299EEEB100BF207D /* ListOfCharactersTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2070D173299EEEB100BF207D /* ListOfCharactersTableViewDataSource.swift */; };
+		2070D177299EF20200BF207D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 2070D176299EF20200BF207D /* Kingfisher */; };
+		2070D179299EF29100BF207D /* ListOfCharactersTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2070D178299EF29100BF207D /* ListOfCharactersTableViewDelegate.swift */; };
+		2070D180299EF42A00BF207D /* CharacterDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2070D17F299EF42A00BF207D /* CharacterDetailsView.swift */; };
+		2070D182299EFF8300BF207D /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2070D181299EFF8300BF207D /* CharacterDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2070D14E299EC87800BF207D /* Rick-and-Morty-MVC-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rick-and-Morty-MVC-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2070D151299EC87800BF207D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2070D153299EC87800BF207D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2070D155299EC87800BF207D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2070D155299EC87800BF207D /* CharactersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListViewController.swift; sourceTree = "<group>"; };
 		2070D158299EC87800BF207D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2070D15A299EC87900BF207D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2070D15D299EC87900BF207D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2070D15F299EC87900BF207D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2070D165299EC94800BF207D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2070D169299ECA9C00BF207D /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		2070D16B299ECBB100BF207D /* CharacterModelResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterModelResponse.swift; sourceTree = "<group>"; };
+		2070D16D299ECBE000BF207D /* CharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterModel.swift; sourceTree = "<group>"; };
+		2070D16F299EE88A00BF207D /* CharacterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListView.swift; sourceTree = "<group>"; };
+		2070D171299EEA0100BF207D /* CharacterListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListCellView.swift; sourceTree = "<group>"; };
+		2070D173299EEEB100BF207D /* ListOfCharactersTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfCharactersTableViewDataSource.swift; sourceTree = "<group>"; };
+		2070D178299EF29100BF207D /* ListOfCharactersTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfCharactersTableViewDelegate.swift; sourceTree = "<group>"; };
+		2070D17F299EF42A00BF207D /* CharacterDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsView.swift; sourceTree = "<group>"; };
+		2070D181299EFF8300BF207D /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2070D177299EF20200BF207D /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,13 +80,86 @@
 			children = (
 				2070D151299EC87800BF207D /* AppDelegate.swift */,
 				2070D153299EC87800BF207D /* SceneDelegate.swift */,
-				2070D155299EC87800BF207D /* ViewController.swift */,
-				2070D157299EC87800BF207D /* Main.storyboard */,
+				2070D17B299EF3EA00BF207D /* CharacterDetails */,
+				2070D17A299EF3A800BF207D /* ListOfCharacters */,
 				2070D15A299EC87900BF207D /* Assets.xcassets */,
 				2070D15C299EC87900BF207D /* LaunchScreen.storyboard */,
 				2070D15F299EC87900BF207D /* Info.plist */,
 			);
 			path = "Rick-and-Morty-MVC-C";
+			sourceTree = "<group>";
+		};
+		2070D166299ECA3A00BF207D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2070D155299EC87800BF207D /* CharactersListViewController.swift */,
+				2070D173299EEEB100BF207D /* ListOfCharactersTableViewDataSource.swift */,
+				2070D178299EF29100BF207D /* ListOfCharactersTableViewDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2070D167299ECA4400BF207D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2070D157299EC87800BF207D /* Main.storyboard */,
+				2070D16F299EE88A00BF207D /* CharacterListView.swift */,
+				2070D171299EEA0100BF207D /* CharacterListCellView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2070D168299ECA4B00BF207D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2070D169299ECA9C00BF207D /* APIClient.swift */,
+				2070D16B299ECBB100BF207D /* CharacterModelResponse.swift */,
+				2070D16D299ECBE000BF207D /* CharacterModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2070D17A299EF3A800BF207D /* ListOfCharacters */ = {
+			isa = PBXGroup;
+			children = (
+				2070D168299ECA4B00BF207D /* Model */,
+				2070D167299ECA4400BF207D /* View */,
+				2070D166299ECA3A00BF207D /* Controller */,
+			);
+			path = ListOfCharacters;
+			sourceTree = "<group>";
+		};
+		2070D17B299EF3EA00BF207D /* CharacterDetails */ = {
+			isa = PBXGroup;
+			children = (
+				2070D17C299EF3FD00BF207D /* Model */,
+				2070D17D299EF40300BF207D /* View */,
+				2070D17E299EF40800BF207D /* Controller */,
+			);
+			path = CharacterDetails;
+			sourceTree = "<group>";
+		};
+		2070D17C299EF3FD00BF207D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2070D17D299EF40300BF207D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2070D17F299EF42A00BF207D /* CharacterDetailsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2070D17E299EF40800BF207D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2070D181299EFF8300BF207D /* CharacterDetailViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +178,9 @@
 			dependencies = (
 			);
 			name = "Rick-and-Morty-MVC-C";
+			packageProductDependencies = (
+				2070D176299EF20200BF207D /* Kingfisher */,
+			);
 			productName = "Rick-and-Morty-MVC-C";
 			productReference = 2070D14E299EC87800BF207D /* Rick-and-Morty-MVC-C.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +209,9 @@
 				Base,
 			);
 			mainGroup = 2070D145299EC87800BF207D;
+			packageReferences = (
+				2070D175299EF20200BF207D /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 2070D14F299EC87800BF207D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,9 +239,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2070D156299EC87800BF207D /* ViewController.swift in Sources */,
+				2070D174299EEEB100BF207D /* ListOfCharactersTableViewDataSource.swift in Sources */,
+				2070D182299EFF8300BF207D /* CharacterDetailViewController.swift in Sources */,
+				2070D16C299ECBB100BF207D /* CharacterModelResponse.swift in Sources */,
+				2070D156299EC87800BF207D /* CharactersListViewController.swift in Sources */,
+				2070D180299EF42A00BF207D /* CharacterDetailsView.swift in Sources */,
+				2070D172299EEA0100BF207D /* CharacterListCellView.swift in Sources */,
+				2070D170299EE88A00BF207D /* CharacterListView.swift in Sources */,
+				2070D179299EF29100BF207D /* ListOfCharactersTableViewDelegate.swift in Sources */,
 				2070D152299EC87800BF207D /* AppDelegate.swift in Sources */,
+				2070D16E299ECBE000BF207D /* CharacterModel.swift in Sources */,
 				2070D154299EC87800BF207D /* SceneDelegate.swift in Sources */,
+				2070D16A299ECA9C00BF207D /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +468,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2070D175299EF20200BF207D /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2070D176299EF20200BF207D /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2070D175299EF20200BF207D /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2070D146299EC87800BF207D /* Project object */;
 }
