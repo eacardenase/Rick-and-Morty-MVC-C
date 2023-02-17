@@ -23,6 +23,8 @@
 		2070D179299EF29100BF207D /* ListOfCharactersTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2070D178299EF29100BF207D /* ListOfCharactersTableViewDelegate.swift */; };
 		2070D180299EF42A00BF207D /* CharacterDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2070D17F299EF42A00BF207D /* CharacterDetailsView.swift */; };
 		2070D182299EFF8300BF207D /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2070D181299EFF8300BF207D /* CharacterDetailViewController.swift */; };
+		2070D185299F034800BF207D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2070D184299F034800BF207D /* Coordinator.swift */; };
+		2070D187299F042300BF207D /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2070D186299F042300BF207D /* MainCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		2070D178299EF29100BF207D /* ListOfCharactersTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfCharactersTableViewDelegate.swift; sourceTree = "<group>"; };
 		2070D17F299EF42A00BF207D /* CharacterDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsView.swift; sourceTree = "<group>"; };
 		2070D181299EFF8300BF207D /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
+		2070D184299F034800BF207D /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		2070D186299F042300BF207D /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,7 @@
 			children = (
 				2070D151299EC87800BF207D /* AppDelegate.swift */,
 				2070D153299EC87800BF207D /* SceneDelegate.swift */,
+				2070D183299F032F00BF207D /* Coordinators */,
 				2070D17B299EF3EA00BF207D /* CharacterDetails */,
 				2070D17A299EF3A800BF207D /* ListOfCharacters */,
 				2070D15A299EC87900BF207D /* Assets.xcassets */,
@@ -162,6 +167,15 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		2070D183299F032F00BF207D /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				2070D184299F034800BF207D /* Coordinator.swift */,
+				2070D186299F042300BF207D /* MainCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -240,7 +254,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2070D174299EEEB100BF207D /* ListOfCharactersTableViewDataSource.swift in Sources */,
+				2070D187299F042300BF207D /* MainCoordinator.swift in Sources */,
 				2070D182299EFF8300BF207D /* CharacterDetailViewController.swift in Sources */,
+				2070D185299F034800BF207D /* Coordinator.swift in Sources */,
 				2070D16C299ECBB100BF207D /* CharacterModelResponse.swift in Sources */,
 				2070D156299EC87800BF207D /* CharactersListViewController.swift in Sources */,
 				2070D180299EF42A00BF207D /* CharacterDetailsView.swift in Sources */,
