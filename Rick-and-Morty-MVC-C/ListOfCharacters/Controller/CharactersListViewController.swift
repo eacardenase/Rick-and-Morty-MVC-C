@@ -14,6 +14,7 @@ class CharactersListViewController: UIViewController {
     var apiClient = ListOfCharactersAPIClient()
     private var tableViewDataSource: ListOfCharactersTableViewDataSource?
     private var tableViewDelegate: ListOfCharactersTableViewDelegate?
+    var characterDetailsPushCoordinator: CharacterDetailsPushCoordinator?
 
     override func loadView() {
         view = CharacterListView()
@@ -31,10 +32,12 @@ class CharactersListViewController: UIViewController {
             
             // Present New Controller
             guard let dataSource = self?.tableViewDataSource else { return }
-            let characterModel = dataSource.characters[index]
-            let characterDetailViewController = CharacterDetailViewController(characterDetailsModel: characterModel)
             
-            self?.present(characterDetailViewController, animated: true)
+            let characterModel = dataSource.characters[index]
+            self?.characterDetailsPushCoordinator = CharacterDetailsPushCoordinator(navigationController: self?.navigationController, characterModel: characterModel)
+            
+            self?.characterDetailsPushCoordinator?.start()
+            
         }
         
         Task {

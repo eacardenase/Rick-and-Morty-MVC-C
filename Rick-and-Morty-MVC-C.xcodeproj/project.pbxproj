@@ -25,6 +25,7 @@
 		2070D182299EFF8300BF207D /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2070D181299EFF8300BF207D /* CharacterDetailViewController.swift */; };
 		2070D185299F034800BF207D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2070D184299F034800BF207D /* Coordinator.swift */; };
 		2070D187299F042300BF207D /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2070D186299F042300BF207D /* MainCoordinator.swift */; };
+		2070D189299F08B300BF207D /* CharacterDetailsPushCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2070D188299F08B300BF207D /* CharacterDetailsPushCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		2070D181299EFF8300BF207D /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
 		2070D184299F034800BF207D /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		2070D186299F042300BF207D /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		2070D188299F08B300BF207D /* CharacterDetailsPushCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsPushCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +174,7 @@
 			children = (
 				2070D184299F034800BF207D /* Coordinator.swift */,
 				2070D186299F042300BF207D /* MainCoordinator.swift */,
+				2070D188299F08B300BF207D /* CharacterDetailsPushCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 				2070D170299EE88A00BF207D /* CharacterListView.swift in Sources */,
 				2070D179299EF29100BF207D /* ListOfCharactersTableViewDelegate.swift in Sources */,
 				2070D152299EC87800BF207D /* AppDelegate.swift in Sources */,
+				2070D189299F08B300BF207D /* CharacterDetailsPushCoordinator.swift in Sources */,
 				2070D16E299ECBE000BF207D /* CharacterModel.swift in Sources */,
 				2070D154299EC87800BF207D /* SceneDelegate.swift in Sources */,
 				2070D16A299ECA9C00BF207D /* APIClient.swift in Sources */,
