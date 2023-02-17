@@ -26,6 +26,7 @@
 		2070D185299F034800BF207D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2070D184299F034800BF207D /* Coordinator.swift */; };
 		2070D187299F042300BF207D /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2070D186299F042300BF207D /* MainCoordinator.swift */; };
 		2070D189299F08B300BF207D /* CharacterDetailsPushCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2070D188299F08B300BF207D /* CharacterDetailsPushCoordinator.swift */; };
+		2070D18B299F0BB400BF207D /* CharacterDetailsModalCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2070D18A299F0BB400BF207D /* CharacterDetailsModalCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		2070D184299F034800BF207D /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		2070D186299F042300BF207D /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		2070D188299F08B300BF207D /* CharacterDetailsPushCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsPushCoordinator.swift; sourceTree = "<group>"; };
+		2070D18A299F0BB400BF207D /* CharacterDetailsModalCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsModalCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				2070D184299F034800BF207D /* Coordinator.swift */,
+				2070D18A299F0BB400BF207D /* CharacterDetailsModalCoordinator.swift */,
 				2070D186299F042300BF207D /* MainCoordinator.swift */,
 				2070D188299F08B300BF207D /* CharacterDetailsPushCoordinator.swift */,
 			);
@@ -261,6 +264,7 @@
 				2070D182299EFF8300BF207D /* CharacterDetailViewController.swift in Sources */,
 				2070D185299F034800BF207D /* Coordinator.swift in Sources */,
 				2070D16C299ECBB100BF207D /* CharacterModelResponse.swift in Sources */,
+				2070D18B299F0BB400BF207D /* CharacterDetailsModalCoordinator.swift in Sources */,
 				2070D156299EC87800BF207D /* CharactersListViewController.swift in Sources */,
 				2070D180299EF42A00BF207D /* CharacterDetailsView.swift in Sources */,
 				2070D172299EEA0100BF207D /* CharacterListCellView.swift in Sources */,
