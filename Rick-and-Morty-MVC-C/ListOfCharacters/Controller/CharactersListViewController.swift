@@ -8,40 +8,20 @@
 import UIKit
 
 class CharactersListViewController: UIViewController {
-    var mainView: CharacterListView {
-        self.view as! CharacterListView
-    }
     var apiClient = ListOfCharactersAPIClient()
     private var tableViewDataSource: ListOfCharactersTableViewDataSource?
     private var tableViewDelegate: ListOfCharactersTableViewDelegate?
-//    var characterDetailsPushCoordinator: CharacterDetailsPushCoordinator?
+    var characterDetailsPushCoordinator: CharacterDetailsPushCoordinator?
     var characterDetailsModalCoordinator: CharacterDetailsModalCoordinator?
-
-    override func loadView() {
-        view = CharacterListView()
-        tableViewDelegate = ListOfCharactersTableViewDelegate()
-        
-        tableViewDataSource = ListOfCharactersTableViewDataSource(tableView: mainView.charactersTableView)
-        mainView.charactersTableView.dataSource = tableViewDataSource
-        mainView.charactersTableView.delegate = tableViewDelegate
-    }
+    var characterListView = CharacterListView()
+    var currentCoordinator: Coordinator?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableViewDelegate?.didTapOnCell = { [weak self] index in
-            
-            // Present New Controller
-            guard let dataSource = self?.tableViewDataSource else { return }
-            
-            let characterModel = dataSource.characters[index]
-//            self?.characterDetailsPushCoordinator = CharacterDetailsPushCoordinator(navigationController: self?.navigationController, characterModel: characterModel)
-            self?.characterDetailsModalCoordinator = CharacterDetailsModalCoordinator(viewController: self, characterModel: characterModel)
-//
-//            self?.characterDetailsPushCoordinator?.start()
-            self?.characterDetailsModalCoordinator?.start()
-            
-        }
+        title = "Push"
+        
+        setup()
         
         Task {
             let characters = await apiClient.getListOfCharacters()
@@ -50,3 +30,61 @@ class CharactersListViewController: UIViewController {
     }
 }
 
+extension CharactersListViewController {
+    
+    private func setup() {
+        view = characterListView
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Change", style: .plain, target: self, action: #selector(changeTapped))
+        
+        tableViewDataSource = ListOfCharactersTableViewDataSource(tableView: characterListView.charactersTableView)
+        characterListView.charactersTableView.dataSource = tableViewDataSource
+        characterListView.charactersTableView.delegate = self
+    }
+    
+    @objc func changeTapped() {
+        let ac = UIAlertController(title: "Change Coordinator", message: nil, preferredStyle: .actionSheet)
+        
+        ac.addAction(UIAlertAction(title: "Push", style: .default, handler: changeTitleCoordinator))
+        ac.addAction(UIAlertAction(title: "Modal", style: .default, handler: changeTitleCoordinator))
+        ac.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+        
+        present(ac, animated: true)
+    }
+    
+    func changeTitleCoordinator(action: UIAlertAction) {
+        DispatchQueue.main.async {
+            self.title = action.title!
+        }
+    }
+}
+
+extension CharactersListViewController: ListOfCharactersTableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        didTapOnCell(index: indexPath.row)
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        120
+    }
+    
+    func didTapOnCell(index: Int) {
+        // Present New Controller
+        guard let dataSource = tableViewDataSource, let currentTitle = title else { return }
+        
+        let characterModel = dataSource.characters[index]
+        
+        switch currentTitle {
+        case "Modal":
+            currentCoordinator = CharacterDetailsModalCoordinator(viewController: self, characterModel: characterModel)
+        case "Push":
+            currentCoordinator = CharacterDetailsPushCoordinator(navigationController: self.navigationController, characterModel: characterModel)
+        default:
+            fatalError("Coordinator not supported")
+        }
+        
+        currentCoordinator?.start()
+    }
+}
